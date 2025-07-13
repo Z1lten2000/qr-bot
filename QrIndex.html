@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR-генератор для Telegram</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.1/build/qrcode.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>🔳 Генератор QR-кодов</h1>
+    <input type="text" id="qr-input" placeholder="Введите текст или ссылку...">
+    <button id="generate-btn">Создать QR</button>
+    <div id="qr-code"></div>
+    <a id="download-btn" class="hidden" download="qr-code.png">💾 Скачать QR</a>
+  </div>
+</body>
+</html>
